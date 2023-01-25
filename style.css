@@ -203,7 +203,13 @@ a {
     padding: 15px 20px;
     color: #292930;
     font-weight: 600;
+    /* cursor: pointer; */
     /* border-bottom: 1px solid #DEDEDE; */
+}
+.sidebar .sidebar-nav-item a:focus,
+.sidebar .sidebar-nav-item a:active,
+.sidebar .sidebar-nav-item a:hover {
+    color: #027395;
 }
 
 .sidebar .navbar-toggler-cross {
@@ -245,12 +251,12 @@ a {
     border: 1px solid;
     padding: 1px 15px;
     border-radius: 30px;
-    /* cursor: pointer; */
+    cursor: pointer;
     
 }
 
 .sidebar #dropdownLink:hover {
-    color: #027395;
+    /* color: #027395; */
     /* border: 1px solid #027395; */
 }
 
@@ -1126,8 +1132,8 @@ footer .skill-item {
     .container {
         max-width: 737px;
     }
-    .form-content {
-        padding: 20px;
+    form .form-content {
+        padding: 15px;
     }
     .hero-section .hero-content h1 {
         font-size: 30px;
@@ -1258,6 +1264,7 @@ footer .skill-item {
     
     form .form-button {
         text-align: left;
+        padding: 10px;
     }
     form .form-field {
         margin:  0 0 16px;
