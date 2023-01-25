@@ -25,13 +25,94 @@
                 </div>
                 <div class="nav-items" id="navItem">
                     <div class="nav-link"><a href="#">HOME</a></div>
-                    <div class="nav-link"><a href="#">SERVICES</a></div>
+                    <div class="nav-link"><a href="#" id="servicesMenuLink">SERVICES <i class="fa fa-angle-down"></i></a></div>
                     <div class="nav-link"><a href="#">ABOUT US</a></div>
                     <div class="nav-link"><a href="#">CAREER</a></div>
                     <div class="nav-link"><a href="#">CONTACT US</a></div>
                 </div>
             </div>
         </header>
+        <div class="services-menu" id="servicesMenuContent">
+            <div class="services-menu-section">
+                <div class="services-menu-head">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="services-menu-content">
+                    <div class="skill-item">
+                        <a href="#">Asp.net & MVC</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">PHP/Wordpress</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">JAVA</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Drupal</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Magento</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-menu-section">
+                <div class="services-menu-head">
+                    <h3>Mobile Development</h3>
+                </div>
+                <div class="services-menu-content">
+                    <div class="skill-item">
+                        <a href="#">iPhone/ipad</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Android</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Window</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Cross Platform</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-menu-section">
+                <div class="services-menu-head">
+                    <h3>Website Testing</h3>
+                </div>
+                <div class="services-menu-content">
+                    <div class="skill-item">
+                        <a href="#">Web App</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Mobile App</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Quality Assurance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-menu-section">
+                <div class="services-menu-head">
+                    <h3>SEO Services</h3>
+                </div>
+                <div class="services-menu-content">
+                    <div class="skill-item">
+                        <a href="#">Local SEO</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Technical SEO</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Social Media Marketing</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Pay Per Click</a>
+                    </div>
+                    <div class="services-menu-item">
+                        <a href="#">Digital Marketing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="sidebar" id="sidebar">
             <div class="sidebar-toggle">
                 <div class="sidebar-img">
@@ -43,13 +124,139 @@
             </div>
             <div class="sidebar-nav-item">
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About Us</li>
-                    <li>Career</li>
-                    <li>Contact Us</li>
+                    <li><a href="#">Home</a></li>
+                    <li id="dropdownLink"><a href="#">Services <i class="fa fa-angle-down dropdown-icon"></i></a></li>
+                        <div id="sidebarDropdown" class="sidebar-dropdown-content">
+                            <div class="services-menu-section">
+                                <div class="services-menu-head">
+                                    <h3>Web Development</h3>
+                                </div>
+                                <div class="services-menu-content">
+                                    <div class="skill-item">
+                                        <a href="#">Asp.net & MVC</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">PHP/Wordpress</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">JAVA</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Drupal</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Magento</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-menu-section">
+                                <div class="services-menu-head">
+                                    <h3>Mobile Development</h3>
+                                </div>
+                                <div class="services-menu-content">
+                                    <div class="skill-item">
+                                        <a href="#">iPhone/ipad</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Android</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Window</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Cross Platform</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-menu-section">
+                                <div class="services-menu-head">
+                                    <h3>Website Testing</h3>
+                                </div>
+                                <div class="services-menu-content">
+                                    <div class="skill-item">
+                                        <a href="#">Web App</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Mobile App</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Quality Assurance</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-menu-section">
+                                <div class="services-menu-head">
+                                    <h3>SEO Services</h3>
+                                </div>
+                                <div class="services-menu-content">
+                                    <div class="skill-item">
+                                        <a href="#">Local SEO</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Technical SEO</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Social Media Marketing</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Pay Per Click</a>
+                                    </div>
+                                    <div class="services-menu-item">
+                                        <a href="#">Digital Marketing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="hero-modal" id="hero-modal">
+            <div class="modal-header">
+                <span>Quotation Form</span>    
+            </div>
+            <div class="modal-logo">
+                <img src="images/header-logo.png" style="max-width: 100%;" alt="header-logo">
+            </div>
+            <i class="fa fa-remove modal-cross-btn" id="modal-cross-btn"></i>
+            
+            <form id="myForm">
+                <div class="form-container">
+                    <div class="form-content">
+                        <h1 class="form-title">Get in Touch</h1>
+                        <div class="form-details">
+                            <div class="input-field form-field">
+                                <label for="firstName">First Name :</label>
+                                <input type="text" id="firstName" name="firstName">
+                                <!-- <div id="fname_err"> </div> -->
+                            </div>
+                            <div class="input-field form-field">
+                                <label for="lastName">Last Name :</label>
+                                <input type="text" id="lastName" name="lastName">
+                                <!-- <div id="lname_err"> </div> -->
+                            </div>
+                            <div class="input-field form-field">
+                                <label for="email">Email address :</label>
+                                <input type="email" id="email" name="email">
+                                <!-- <div id="email_err"> </div> -->
+                            </div>
+                            <div class="input-field form-field">
+                                <label for="subjetc">Your Subject :</label>
+                                <input type="text"  id="subjetc" name="subject">
+                            </div>
+                        </div>
+                        <div class="message-field form-field">
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" type="text"></textarea>
+                        </div>
+                        <div class="other-field form -field form-button">
+                            <input type="submit" value="Send a Message" id="submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
         <section class="hero-section">
             <div class="container">
@@ -60,7 +267,7 @@
                             <h1>Marquee Solution</h1>
                             <p>To be a leader in the IT services by providing enhanced services, relationship.</p>
                         </div>
-                        <div class="content-button hero-button"><a class="content-link" href="#">Get A Quotation</a></div>
+                        <div class="content-button hero-button"><a class="content-link" id="hero-modal-btn" href="#">Get A Quotation</a></div>
                     </div>
                     <div class="hero-image">
                         <img src="images/hero.png" alt="hero-image">
@@ -632,6 +839,8 @@
             </div>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script src="script.js"></script>   
 </body> 
 </html>
