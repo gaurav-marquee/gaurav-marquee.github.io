@@ -319,9 +319,7 @@ form {
     /* text-align: center; */
     /* width: 60%; */
     /* margin: 0 auto;
-    padding-top: 30px; */
-    
-    
+    padding-top: 30px; */    
 }
 
 form .form-container {
@@ -329,12 +327,14 @@ form .form-container {
     margin: 50px auto;
     padding: 0 20px;
 }
+
 form .form-content {
     background-color: #ffffff;
     padding: 40px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
     border-radius: 20px;
 }
+
 form .form-content .form-title {
     position: relative;
     text-align: center;
@@ -343,6 +343,7 @@ form .form-content .form-title {
     color: #292930;
     margin-bottom: 32px;
 }
+
 form .form-content .form-title::after {
     content: '';
     width: 25%;
@@ -355,74 +356,113 @@ form .form-content .form-title::after {
     border-radius: 20px;
     margin: 0 auto;
 }
+
 form .input-field input ,
-form .message-field input {
+form .message-field textarea {
     width: 100%;
     padding: 12px;
-    background-color: #ecf2f6;
+    /* background-color: #ecf2f6; */
     border: 1px solid #e7e7e7;
     border-radius: 4px;
 }
-
 
 form .message-field label,
 form .input-field label {
     display: block;
     color: #96969e;
     margin-bottom: 8px;
+    position: absolute;
+    top: 0;
+    padding: 11px;
+    /* transform-origin: 0 0; */
+    transition: opacity .1s ease-in-out,transform .2s ease-in-out;
 }
+
 form label.error {
+    display: block;
     font-size: 15px;
     color: #dc3545;
     margin-top: 6px;
     margin: 6px 0 0 ;
+    padding-left: 10px;
 }
-/* form label.error {
-    font-size: 15px;
-    color: #dc3545;
-    margin-top: 6px;
-    margin: 6px 0 0 ;
-} */
+
+input.error,
+textarea.error,
+input.error:active {
+    border: 1px solid red !important;
+}
+
+#error-note {
+    background-color: rgb(251, 236, 236);
+    display: none;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
 form .input-field input:hover,
-form .input-field input:active,
-form .input-field input:focus-visible,
-form .input-field input:focus {
-    /* border-color: #027395; */
+form .input-field input:active{
+/* form .input-field input:focus-visible, */
+/* form .input-field input:focus { */
+    border: 1px solid #027395;
     outline: 1px solid #027395;
+}
+form .input-field input:focus,
+form .message-field  textarea:focus {
+    outline: none;
+}
+
+form .input-field input:hover.error,
+form .input-field input:active.error{
+/* form .input-field input:focus-visible.error, */
+/* form .input-field input:focus.error { */
+    border: 1px solid red !important;
+    outline: 1px solid red !important;
 }
 
 form .message-field  textarea {
-    
-    background-color: #ecf2f6;
+    /* background-color: #ecf2f6; */
     border: 1px solid #e7e7e7;
 }
+
 form .message-field  textarea:hover,
-form .message-field  textarea:active,
-form .message-field  textarea:focus-visible,
-form .message-field  textarea:focus {
-    /* border-color: #027395; */
+form .message-field  textarea:active{
+/* form .message-field  textarea:focus-visible, */
+/* form .message-field  textarea:focus { */
     border: 1px solid #027395;
-}
-form .message-field  textarea:focus-visible {
     outline: 1px solid #027395;
 }
 
-form input:invalid {
-    outline: 1px solid #dc3545;
+form .message-field  textarea:hover.error,
+form .message-field  textarea:active.error{
+/* form .message-field  textarea:focus-visible.error, */
+/* form .message-field  textarea:focus.error { */
+    border: 1px solid red !important;
+    outline: 1px solid red !important;
 }
-form textarea:invalid {
-    outline: 1px solid #dc3545;
-}
-.error > input {
+
+
+/* form input:invalid {
     outline: 1px solid #dc3545;
 }
 
-form .form-field {
-    margin-bottom: 16px;
+form textarea:invalid {
+    outline: 1px solid #dc3545;
 }
+
+.error > input {
+    outline: 1px solid #dc3545;
+} */
+
+form .form-field {
+    margin-bottom: 24px;
+}
+
 form .message-field {
+    width: 100%;
     padding: 0 10px;
 }
+
 form .form-field textarea {
     width: 100%;
     border-radius: 4px;
@@ -441,20 +481,56 @@ form .form-button input {
 
 form .form-button {
     text-align: center;
+    margin-top: 16px;
 }
 
 form .form-details {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
+
 .input-field {
     width: 50%;
     /* padding-right: 10px; */
     padding: 0 10px;
+    position: relative;
+}
+
+.message-field {
+    position: relative;
 }
 
 form .form-button input:hover {
     background-color: #045973;
+}
+
+/* .label-float {
+    transform: translateY(-0.5em);
+} */
+
+input:focus + label,
+input + label.freeze {
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  transform: translate(0px, -8px);
+  border-radius: 5px;
+  /* border: 1px solid #027395; */
+  margin: 0 11px;
+  padding: 0 5px;
+}
+
+textarea:focus + label,
+textarea + label.freeze {
+    font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  transform: translate(0px, -8px);
+  border-radius: 5px;
+  /* border: 1px solid #027395; */
+  margin: 0 11px;
+  padding: 0 5px;
 }
 
 /* ********HERO SEC******** */
@@ -1320,10 +1396,12 @@ footer .skill-item {
     .navbar-brand img {
         width: 70%;
     }
+
     /* .input-field {
         width: 100%;
         padding-right: 0;
     } */
+    
     form .form-content .form-title {
         text-align: center;
         font-size: 25px;
