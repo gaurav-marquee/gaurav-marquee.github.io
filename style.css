@@ -514,6 +514,7 @@ input + label.freeze {
   font-size: 14px;
   font-weight: 400;
   background: #fff;
+  color: #027395;
   transform: translate(0px, -8px);
   border-radius: 5px;
   /* border: 1px solid #027395; */
@@ -526,11 +527,32 @@ textarea + label.freeze {
     font-size: 14px;
   font-weight: 400;
   background: #fff;
+  color: #027395;
   transform: translate(0px, -8px);
   border-radius: 5px;
   /* border: 1px solid #027395; */
   margin: 0 11px;
   padding: 0 5px;
+}
+
+
+.form-input::placeholder {
+    opacity: 0;
+    font-size: 14px;
+}
+
+.form-input:focus::placeholder {
+    opacity: 0.8;
+}
+
+input:focus.error + label,
+input + label.freeze {
+    color: red;
+}
+
+textarea:focus + label,
+textarea + label.freeze {
+    color: red;
 }
 
 /* ********HERO SEC******** */

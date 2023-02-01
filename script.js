@@ -134,7 +134,7 @@ $(document).ready(function(){
         },
        
         // errorClass: "form_validation_error",  
-        errorLabelContainer: $("#error-note")
+        // errorLabelContainer: $("#error-note")
     });
 
 
@@ -153,9 +153,9 @@ $(document).ready(function(){
         var valueLength = input.val().length;
         
         if (valueLength > 0 ) {
-          label.addClass('freeze')
+            label.addClass('freeze')
         } else {
-              label.removeClass('freeze')
+            label.removeClass('freeze')
         }
       }
       
